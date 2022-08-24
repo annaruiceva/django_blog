@@ -1,0 +1,16 @@
+{% extends 'posts/base.html' %}
+
+{% block title %} FlaskBlog {% endblock %}
+{% block content %}
+    <h1>Ku-KU</h1>
+ {% for post in posts %}
+        <a href="/">
+            <h2>{{ post.title }}</h2>
+        </a>
+        <span class="badge badge-primary">{{ post.created}}</span>
+        <a href="/">
+            <span class="badge badge-warning">Edit</span>
+        </a>
+        <hr>
+<!--{% endfor %}-->
+{% endblock %}
